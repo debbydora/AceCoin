@@ -1,0 +1,10 @@
+export { default as close } from "./close.svg";
+export { default as editIcon } from "./edit-pencil.svg";
+export { default as masterSymbol } from "./mc_symbol.svg";
+export { default as verified } from "./verified-badge.svg";
+export { default as dotGroup } from "./dots.svg";
+export { default as chip } from "./chip.png";
+export { default as wifi } from "./wifi.png";
+export { default as masterCard } from "./mastercard-2.svg";
+export { default as apple } from "./apple-13.svg";
+export { default as docket } from "./docket.png";

@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: url("../src/assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 3rem;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.1);
+}
+
+.timer-box {
+  background-color: #05365c;
+  color: #fff;
+  height: 1.9em;
+  width: 1.3em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.input-group {
+  margin-bottom: 2em;
+}
+
+.main {
+  position: relative;
+  margin-top: 1em;
+}
+.main img {
+  position: absolute;
+}
+
+.mSymbol {
+  left: 0;
+  height: 2em;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 1.2em;
+}
+
+.trailing-icon {
+  right: 0;
+  height: 1.5em;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 1.5em;
+}
+.main input {
+  border: 2px solid rgba(224, 224, 224, 0.5);
+  width: 100%;
+  padding: 1em 4em 1em 4em;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #f5f8ff, transparent);
+  color: #05365c;
+}
+.main input:focus {
+  outline-color: #0077b6;
+}
+
+.main input::placeholder {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-group.__col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  gap: 10px;
+}
+.grp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  width: 400px;
+  position: relative;
+}
+.grp .divider {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #05365c;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.input-group.__col .main {
+  margin-top: 0;
+  width: 400px;
+}
+.input-group.__col .main input {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  background: none;
+}
+.input-group.__col .main input:focus {
+  background: rgba(0, 119, 182, 0.05);
+}
+.main input[type="password"] {
+  text-align: left;
+  padding-left: 1.5em;
+  letter-spacing: 0.3em;
+}
+.input-group.__col .main .trailing-icon {
+  opacity: 0.35;
+}
+
+.input-group.__col .main.__date {
+  width: 42%;
+}
+.btn-btn {
+  background-color: #035fff;
+  width: 100%;
+  padding: 1.2em 0;
+  margin-top: 0.75em;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 0.6em;
+  transition: all 250ms ease-in-out;
+}
+.btn-btn:hover {
+  background-color: #1254d6;
+}
+
+.checkout {
+  position: relative;
+  width: 100%;
+}
+.credit-card {
+  width: 80%;
+  height: 23.4em;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), #fff);
+  backdrop-filter: blur(15px);
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0px 4px 14px 2px rgba(224, 224, 224, 0.6);
+  position: relative;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+.credit-card__head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 8em;
+}
+.credit-card__head img {
+  height: 1.8em;
+}
+.credit-card__head .chip {
+  height: 3.5em;
+}
+.credit-card__body {
+  position: relative;
+  color: #05365c;
+}
+.credit-card__body span {
+  display: block;
+}
+.holder {
+  text-transform: capitalize;
+  font-size: 0.95em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  color: #616161;
+}
+.card-digits {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.hidden-digits {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  margin-right: 0.5em;
+}
+.circle {
+  height: 0.4em;
+  width: 0.4em;
+  border-radius: 50%;
+  background-color: #17254c;
+  margin-right: 0.4em;
+}
+.visible-digits {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.credit-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  position: relative;
+  top: 1.4em;
+}
+.expiry {
+  font-size: 1em;
+  font-weight: 600;
+}
+.logo {
+  height: 2.5em;
+}
+
+.card__design {
+  width: 700px;
+  height: 700px;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3.5em;
+  left: -6em;
+  z-index: -1;
+}
+.inner {
+  display: inline-block;
+  width: 570px;
+  height: 570px;
+  border-radius: inherit;
+  border: inherit;
+}
+.blu {
+  display: block;
+  height: 1.5em;
+  width: 5em;
+  background-color: #035fff;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.checkout-details {
+  background-color: #f0f3f8;
+  height: 570px;
+  width: 100%;
+  border-radius: 1em;
+  position: absolute;
+  top: 6em;
+}
+.purchase-data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 15.5em;
+  padding: 2em;
+  gap: 10px;
+}
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  text-transform: capitalize;
+  font-size: 1em;
+  color: #8e96a3;
+}
+.title {
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.value img {
+  height: 1.5em;
+}
+.inner-text {
+  color: #05365c;
+  font-weight: 600;
+  margin-left: 0.6em;
+}
+.checkout-details .divider {
+  position: absolute;
+  bottom: 7.4em;
+  width: 100%;
+  border: 4px dashed #cbcbcb;
+  display: flex;
+  align-items: center;
+}
+.checkout-details .divider .left,
+.checkout-details .divider .right {
+  position: absolute;
+  height: 2.65em;
+  width: 2.65em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.checkout-details .divider .left {
+  bottom: -15px;
+  left: -25px;
+}
+.checkout-details .divider .right {
+  bottom: -15px;
+  right: -25px;
+}
+.checkout-details .divider::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2em;
+  background-color: #f0f3f8;
+  bottom: -30px;
+}
+.purchase-total {
+  position: absolute;
+  bottom: 1.4em;
+  width: 100%;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.total .desc {
+  color: #8e96a3;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.total .t-amount {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  color: #05365c;
+}
+.t-amount .amount {
+  font-size: 2em;
+  font-weight: 700;
+}
+.amount sub {
+  font-size: 0.6em;
+  position: relative;
+  bottom: 1px;
+  font-weight: 500;
+}
+.t-amount .symbol {
+  position: relative;
+  top: 4px;
+  font-size: 1.1em;
+  margin-left: 0.2em;
+  color: #8e96a3;
+}
+.purchase-total img {
+  height: 1.6em;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-details {
+    height: 600px;
+    position: relative;
+    margin-top: -17rem;
+    top: 0;
+  }
+  .purchase-data {
+    padding: 2em 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .data {
+    font-size: 1em;
+    color: #8e96a3;
+    margin: 0;
+    margin-top: 6px;
+  }
+}
