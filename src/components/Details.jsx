@@ -1,12 +1,20 @@
 import React from "react";
-import { editIcon, masterSymbol, verified, dotGroup } from "../assets/exports";
+import {
+  editIcon,
+  masterSymbol,
+  verified,
+  dotGroup,
+  logoIcon,
+} from "../assets/imageExports/exports";
 
 const Details = () => {
   return (
     <div className="lg:w-[65%] md:w-[65%] w-full">
       <header className="lg:flex md:flex xl:flex items-center justify-between flex-initial mb-10 ">
         <div className="flex items-center flex-initial lg:gap-4 md:gap-4 gap-1 xl:gap-4">
-          <span className="h-[3em] w-[3em] bg-logoBlue rounded-3xl"></span>
+          <span className="h-[3em] w-[3em] bg-logoBlue rounded-3xl flex items-center justify-center">
+            <img src={logoIcon} alt="logo" className="h-6 w-6" />
+          </span>
           <h1 className="text-2xl font-semibold text-logoColor">
             AceCoin<span className="font-light">Pay</span>
           </h1>

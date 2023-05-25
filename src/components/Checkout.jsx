@@ -1,5 +1,11 @@
 import React from "react";
-import { chip, wifi, apple, docket, masterCard } from "../assets/exports";
+import {
+  wifi,
+  apple,
+  masterCard,
+  chip2,
+  payout,
+} from "../assets/imageExports/exports";
 
 const Checkout = () => {
   return (
@@ -8,7 +14,7 @@ const Checkout = () => {
         <span className="blu"></span>
         <div className="credit-card">
           <div className="credit-card__head">
-            <img src={chip} alt="chip" className="chip" />
+            <img src={chip2} alt="chip" className="chip" />
             <img src={wifi} alt="wifi" className="wifi" />
           </div>
           <div className="credit-card__body">
@@ -73,7 +79,7 @@ const Checkout = () => {
                 <span className="symbol">USD</span>
               </div>
             </div>
-            <img src={docket} alt="docket" />
+            <img src={payout} alt="docket" />
           </div>
         </div>
       </div>

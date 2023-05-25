@@ -1,5 +1,5 @@
 import React from "react";
-import { close } from "../assets/exports";
+import { close } from "../assets/imageExports/exports";
 import Details from "../components/Details";
 import Checkout from "../components/Checkout";
 
